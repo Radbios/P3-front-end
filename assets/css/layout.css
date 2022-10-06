@@ -1,0 +1,43 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.content{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 10% 90%;
+    gap: 0.5%;
+}
+
+sidebar{
+    display: grid;
+    grid-template-rows: 3fr 7fr 3fr;
+    border: solid black;
+    padding: 1%;
+    gap: 1%;
+}
+
+main{
+    border: solid black;
+}
+
+#logo{
+    border: solid black;
+
+}
+
+.side-list{
+    border: solid black;
+}
+
+#logout{
+    border: solid black;
+
+}
+
+li {
+    list-style-type: none;
+  }

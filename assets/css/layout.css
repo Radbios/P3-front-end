@@ -115,6 +115,9 @@ main{
     font-size:x-large;
     font-weight: bold;
 }
+.btn:hover{
+    background-color: #2c3bc7;
+}
 
 table{
 }

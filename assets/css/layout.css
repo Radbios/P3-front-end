@@ -110,7 +110,11 @@ main{
 .color-white{
     color: white;
 }
-
+.title-text{
+    color: #3D479B;
+    font-size:x-large;
+    font-weight: bold;
+}
 
 table{
 }

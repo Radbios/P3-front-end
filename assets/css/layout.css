@@ -97,3 +97,25 @@ main{
 .bi{
     font-size: 2em;
 }
+
+
+.border-curved{
+    border-radius: 15px;
+}
+
+.bg-blue{
+    background-color: #3D479B;
+}
+
+.color-white{
+    color: white;
+}
+
+
+table{
+}
+
+tr{
+   
+    
+}

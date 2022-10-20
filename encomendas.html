@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/layout.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>Encomendas</title>
@@ -79,23 +80,23 @@
         <main>
 
             <section id="encomendas">
-                <div id="table-title">
+                <div id="table-title" class="d-flex justify-content-between mt-5">
                     <div class="title-text">
                         Encomendas
                     </div>
-                    <div class="btn-group">
-                        <button type="button" class="border-curved bg-blue color-white">Filtrar</button>
-                        <button type="button" class="border-curved bg-blue color-white">Adicionar</button>
+                    <div class="">
+                        <button type="button" class="btn btn-primary bg-blue">Filtrar</button>
+                        <button type="button" class="btn btn-primary bg-blue">Adicionar</button>
                     </div>
                 </div>
                 <div id="table-body">
-                    <table>
+                    <table class="table table-hover">
                         <thead>
                             <tr>
-                                <th>Cliente</th>
-                                <th>Data de entrega</th>
-                                <th>Estado da entrega</th>
-                                <th>Ação</th>
+                                <th scope="col">Cliente</th>
+                                <th scope="col">Data de entrega</th>
+                                <th scope="col">Estado da entrega</th>
+                                <th scope="col">Ação</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -112,10 +113,10 @@
                                 </td>
 
                                 <td>
-                                    <div class="btn-group">
-                                        <button>Ver</button>
-                                        <button>Editar</button>
-                                        <button>Deletar</button>
+                                    <div class="">
+                                        <button type="button" class = "btn btn-primary bg-blue">Ver</button>
+                                        <button type="button" class = "btn btn-primary bg-blue">Editar</button>
+                                        <button type="button" class = "btn btn-primary bg-blue">Deletar</button>
                                     </div>
                                 </td>
                             </tr>

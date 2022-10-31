@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">  
-    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <title>Dashboard</title>
 </head>
@@ -83,19 +83,44 @@
             <section id="home">
                 <div id="content1" class="margin-main border-curved bg-gray d-flex flex-column align-items-center">
                     <div class = "title-text"> Pedidos </div>
-                    <div id="pedidosAlerts" class="d-flex align-items-start w-100 h-100">
-                        <div id="cards-pedidos" class="w-25 h-100">Cards
-                            <div id="info-card" class = "w-75 h-75">teste</div>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                          <div class="card h-100 border-danger">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card 1</h5>
+                              <p class="card-text"></p>
+                            </div>
+                            <div class="card-footer" style="background-color: red;">
+                              <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                          </div>
                         </div>
-                        <div id="cards-pedidos" class="w-25 h-100">Cards
-                            <div id="info-card" class = "w-75 h-75">teste</div>
+                        <div class="col">
+                          <div class="card h-100 border-warning">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card 2</h5>
+                              <p class="card-text"></p>
+                            </div>
+                            <div class="card-footer" style="background-color: yellow;">
+                              <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                          </div>
                         </div>
-                        <div id="cards-pedidos" class="w-25 h-100">Cards
-                            <div id="info-card" class = "w-75 h-75">teste</div>
+                        <div class="col">
+                          <div class="card h-100 border-success">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card 3</h5>
+                              <p class="card-text"></p>
+                            </div>
+                            <div class="card-footer" style="background-color: green;">
+                              <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                          </div>
                         </div>
-
-                        <!--um for mostrando pedidos em um card especifico de acordo com seu status e data de entrega-->
-                    </div>
+                      </div>
                 </div>
 
                 <div id="content2" class="margin-main">

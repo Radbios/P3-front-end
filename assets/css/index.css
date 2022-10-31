@@ -7,6 +7,25 @@
     gap: 15px;
 }
 
+.box-img {
+    width: 175px;
+}
+
+.box-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.box-text {
+    display: flex;
+    color: #7C7C7C;
+    gap: 0 24px;
+}
+
+.sombra {
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
 #content1{
     margin-top: 2%;
 }

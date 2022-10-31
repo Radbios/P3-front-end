@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/layout.css">
-    <link rel="stylesheet" href="../assets/css/client.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <title>Clientes</title>
+    <title>Produtos</title>
 </head>
 <body>
     <div class="content">
@@ -79,11 +78,11 @@
         </sidebar>
         
         <main>
-            
-            <section id="clientes">
+
+            <section id="produtos">
                 <div id="table-title" class="d-flex justify-content-between mx-4">
                     <div class="title-text">
-                        Clientes
+                        Produtos
                     </div>
                     <div class="">
                         <button type="button" class="btn btn-primary bg-blue">Filtrar</button>
@@ -94,43 +93,39 @@
                             <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastro de Clientes</h1>
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastro de Produtos</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <form>
-                                        <div class="mb-3">
-                                          <label for="nomeCliente" class="form-label">Nome Completo</label>
-                                          <input type="text" class="form-control" id="nomeCliente" aria-describedby="emailHelp">
-                                          <!-- <div id="emailHelp" class="form-text"></div> -->
+                                        <div class="mb-3 d-flex flex-row justify-content-between">
+                                            <div class="mb-3">
+                                                <label for="nomeProduto" class="form-label">Nome do Produto</label>
+                                                <input type="text" class="form-control" id="nomeProduto">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="precoProduto" class="form-label">Preço(unidade)</label>
+                                                <input type="text" class="form-control" id="precoProduto">
+                                            </div>
                                         </div>
                                         <div class="mb-3 d-flex flex-row justify-content-between">
                                             <div class="mb-3">
-                                                <label for="cpfCliente" class="form-label">CPF</label>
-                                                <input type="text" class="form-control" id="cpfCliente">
+                                                <label for="materialProduto" class="form-label">Material Usado</label>
+                                                <input type="text" class="form-control" id="materialProduto">
                                             </div>
                                             <div class="mb-3">
-                                                <label for="contatoCliente" class="form-label">Contato</label>
-                                                <input type="tel" class="form-control" id="contatoCliente">
+                                                <label for="unidadeMedidaProduto" class="form-label">Unidade de Medida</label>
+                                                <input type="tel" class="form-control" id="unidadeMedidaProduto">
                                             </div>
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="emailCliente" class="form-label">Email</label>
-                                            <input type="email" class="form-control" id="emailCliente" aria-describedby="emailHelp">
-                                            <!-- <div id="emailHelp" class="form-text"></div> -->
-                                          </div>
                                           <div class="mb-3 d-flex flex-row gap-2 justify-content-between">
                                             <div class="mb-3">
-                                                <label for="enderecoCliente" class="form-label">Endereço</label>
-                                                <input type="text" class="form-control" id="enderecoCliente">
+                                                <label for="listaProduto" class="form-label">Lista</label>
+                                                <textarea class="form-control" aria-label="With textarea" id="listaProduto"></textarea>
                                             </div>
                                             <div class="mb-3">
-                                                <label for="numeroCliente" class="form-label">N°</label>
-                                                <input type="text" class="form-control" id="numeroCliente">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="cepCliente" class="form-label">CEP</label>
-                                                <input type="text" class="form-control" id="cepCliente">
+                                                <label for="custoProduto" class="form-label">Custo</label>
+                                                <input type="text" class="form-control" id="custoProduto">
                                             </div>
                                         </div>
                                       </form>
@@ -142,7 +137,6 @@
                             </div>
                             </div>
                         </div>
-                        <!-- //Modal -->
                     </div>
                 </div>
                 <div id="table-body">
@@ -150,20 +144,18 @@
                         <thead>
                             <tr>
                                 <th scope="col">Nome</th>
-                                <th scope="col">Telefone</th>
+                                <th scope="col">Valor</th>
                                 <th scope="col">Ação</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>
-                                    Fabiano
+                                    Nome do produto
                                 </td>
-
                                 <td>
-                                    82 9999-9999
+                                    R$11111,00
                                 </td>
-
                                 <td>
                                     <div class="">
                                         <button type="button" class = "btn btn-primary bg-blue">Ver</button>
